@@ -1,0 +1,13 @@
+[Unit]
+Description=NidhiIQ PolicyBazaar FastAPI Service
+After=network.target
+
+[Service]
+User=root
+WorkingDirectory=/var/www/nidhiIQ
+ExecStart=/var/www/nidhiIQ/venv/bin/uvicorn backend.app.main:app --host 127.0.0.1 --port 8000 --workers 4
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
