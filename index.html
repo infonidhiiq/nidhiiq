@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NidhiIQ — PolicyBazaar Standard Platform | Compare & Buy Insurance & Investment Plans</title>
+  <meta name="description"
+    content="NidhiIQ — Compare insurance policies online. Buy Term Life, Health, Car, Bike, Child Savings, Retirement & Investment plans from India's top insurers. Instant live quotes & 24x7 claim support.">
+  <link rel="stylesheet" href="/static/css/main.css">
+  <link rel="shortcut icon" href="/static/images/nidhiiq_official_logo.png">
+  <style>
+    /* Exact Clean Flat Cards (No Badges, No Shadows) */
+    .pb-card-7col {
+      background: #f2f6fc !important;
+      border-radius: 18px !important;
+      padding: 24px 12px 18px !important;
+      text-align: center !important;
+      box-shadow: none !important;
+      border: 1px solid #eef2f8 !important;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.2s;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+      min-height: 185px;
+    }
+
+    .pb-card-7col:hover {
+      background: #e8f0fe !important;
+      transform: translateY(-4px);
+    }
+
+    .pb-card-icon-img {
+      width: 78px;
+      height: 78px;
+      object-fit: contain;
+      margin-top: 6px;
+      margin-bottom: 14px;
+      filter: none !important;
+      box-shadow: none !important;
+    }
+
+    .pb-card-7col-title {
+      font-size: 0.92rem !important;
+      font-weight: 700 !important;
+      color: #1e293b !important;
+      line-height: 1.3 !important;
+    }
+
+    /* Attached Screenshot Header Specific Styling */
+    .nidhi-header-menu {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nidhi-header-link {
+      color: #334155;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+      transition: color 0.2s;
+      cursor: pointer;
+    }
+
+    .nidhi-header-link:hover {
+      color: #046a38;
+    }
+
+    .nidhi-nav-divider {
+      color: #cbd5e1;
+      font-weight: 300;
+      font-size: 1.1rem;
+      user-select: none;
+    }
+
+    .btn-in-news {
+      background: #046a38;
+      color: #ffffff !important;
+      padding: 10px 22px;
+      border-radius: 30px;
+      font-weight: 700;
+      font-size: 0.92rem;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: background 0.2s, transform 0.2s;
+      border: none;
+      cursor: pointer;
+    }
+
+    .btn-in-news:hover {
+      background: #03522b;
+      transform: translateY(-1px);
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Top Header Tagline Bar -->
+  <div class="pb-top-bar">
+    <div
+      style="display:flex; justify-content:center; align-items:center; gap:20px; flex-wrap:wrap; text-align:center; width:100%;">
+      <div style="font-size:0.85rem; letter-spacing:0.6px; text-transform:uppercase;">
+        <span style="color:#046a38; font-weight:800;">FINANCIAL INTELLIGENCE.</span>
+        <span style="color:#780016; font-weight:800; margin-left:3px;">LIFELONG PROSPERITY.</span>
+      </div>
+      <div style="color:#cbd5e1; font-weight:300;">|</div>
+      <div style="font-size:0.92rem;">
+        <span style="color:#046a38; font-weight:800;">वित्तीय बुद्धिमत्ता।</span>
+        <span style="color:#780016; font-weight:800; margin-left:4px;">जीवनभर की समृद्धि।</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header Navigation matching User Screenshot -->
+  <header class="pb-navbar" style="padding: 10px 5%;">
+    <a href="#" style="display:flex; align-items:center; text-decoration:none;">
+      <img src="/static/images/nidhiiq_wordmark_logo.png?v=6" alt="NidhiIQ Official Wordmark"
+        style="height: 28px; max-height: 30px; width: auto; object-fit: contain;">
+    </a>
+
+    <!-- Navbar items matching exact requested screenshot layout -->
+    <ul class="nidhi-header-menu">
+      <li><a href="#products" class="nidhi-header-link">Insurance</a></li>
+      <li><a href="#featured-solutions" class="nidhi-header-link">Investments</a></li>
+      <li><a href="javascript:void(0)" onclick="App.openEnquireModal('Retirement Plans')"
+          class="nidhi-header-link">Retirement</a></li>
+      <li><a href="javascript:void(0)" onclick="App.openEnquireModal('Family Office')" class="nidhi-header-link">Family
+          Office</a></li>
+      <li><a href="javascript:void(0)" onclick="App.openEnquireModal('Real Estate')" class="nidhi-header-link">Real
+          Estate</a></li>
+      <li class="nidhi-nav-divider">|</li>
+      <li><a href="javascript:void(0)" onclick="App.openEnquireModal('Loan Solutions')"
+          class="nidhi-header-link">Loan</a></li>
+      <li class="nidhi-nav-divider">|</li>
+      <li><a href="javascript:void(0)" onclick="App.openEnquireModal('About NidhiIQ')" class="nidhi-header-link">About
+          ▾</a></li>
+    </ul>
+
+    <!-- 'In News ›' Green Pill Button linking to YouTube -->
+    <div>
+      <a href="https://www.youtube.com/@nidhiiqwealth" target="_blank" rel="noopener noreferrer" class="btn-in-news">
+        In News ›
+      </a>
+    </div>
+  </header>
+
+  <!-- PolicyBazaar Hero Section -->
+  <section style="background:#ffffff; border-bottom:1px solid #e2e8f0; padding-bottom:10px;">
+    <div class="pb-hero-container">
+      <div>
+        <h1 class="pb-hero-title">Let's find you<br>the <strong>Best Insurance</strong></h1>
+        <div class="pb-sub-bullets">
+          <div class="pb-bullet-item">
+            <div class="pb-icon-circle-purple">🧮</div>
+            <span style="color:#64748b;">offering<br><strong style="color:#4338ca;">lowest prices</strong></span>
+          </div>
+          <div class="pb-bullet-item">
+            <div class="pb-icon-circle-orange">⚡</div>
+            <span style="color:#ea580c;">Quick, easy &<br>hassle free</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Promo Card -->
+      <div class="pb-promo-card">
+        <div class="pb-promo-title">Best time to buy Health Insurance is now</div>
+        <div class="pb-promo-badge-yellow">Additional discount up to 25%*</div>
+        <div style="font-size:0.85rem; margin-bottom:16px; opacity:0.9;">0%* GST on health insurance plans</div>
+        <button class="pb-promo-btn" onclick="App.openEnquireModal('Health Insurance Promo')">View plans ›</button>
+        <div style="position:absolute; bottom:14px; right:20px; font-size:1.2rem; opacity:0.6;">● ○ ○</div>
+      </div>
+    </div>
+
+    <!-- 7 Columns per row (2 rows x 7 cols = 14 product tiles with HIGH-RES CENTERED ICONS) -->
+    <div class="pb-grid-7col" id="products">
+      <!-- ROW 1 -->
+      <div class="pb-card-7col" onclick="App.openEnquireModal('Term Life Insurance')">
+        <img src="/static/images/clean_icons/term_life_insurance.png?v=11" alt="Term Life Insurance"
+          class="pb-card-icon-img">
+        <div class="pb-card-7col-title">Term Life Insurance</div>
+      </div>
+
+      <div class="pb-card-7col" onclick="App.openEnquireModal('Health Insurance')">
+        <img src="/static/images/clean_icons/health_insurance.png?v=11" alt="Health Insurance" class="pb-card-icon-img">
+        <div class="pb-card-7col-title">Health Insurance</div>
+      </div>
+
+      <div class="pb-card-7col" onclick="App.openEnquireModal('Investment Plans')">
+        <img src="/static/images/clean_icons/investment_plans.png?v=11" alt="Investment Plans" class="pb-card-icon-img">
+        <div class="pb-card-7col-title">Investment Plans</div>
+      </div>
+
+      <div class="pb-card-7col" onclick="App.openEnquireModal('Motor Insurance')">
+        <img src="/static/images/clean_icons/motor_insurance.png?v=11" alt="Motor Insurance" class="pb-card-icon-img">
+        <div class="pb-card-7col-title">Motor Insurance</div>
+      </div>
+
+      <div class="pb-card-7col" onclick="App.openEnquireModal('Term Plans')">
+        <img src="/static/images/clean_icons/term_plans.png?v=11" alt="Term Plans" class="pb-card-icon-img">
+        <div class="pb-card-7col-title">Term Plans</div>
+      </div>
+
+      <div class="pb-card-7col" onclick="App.openEnquireModal('Guaranteed Return Plans')">
+        <img src="/static/images/clean_icons/guaranteed_return_plans.png?v=11" alt="Guaranteed Return Plans"
+          class="pb-card-icon-img">
+        <div class="pb-card-7col-title">Guaranteed Return Plans</div>
+      </div>
+
+      <div class="pb-card-7col" onclick="App.openEnquireModal('Child Savings Plans')">
+        <img src="/static/images/clean_icons/child_savings_plans.png?v=11" alt="Child Savings Plans"
+          class="pb-card-icon-img">
+        <div class="pb-card-7col-title">Child Savings Plans</div>
+      </div>
+
+      <!-- ROW 2 -->
+      <div class="pb-card-7col" onclick="App.openEnquireModal('Family Health Insurance')">
+        <img src="/static/images/clean_icons/family_health_insurance.png?v=11" alt="Family Health Insurance"
+          class="pb-card-icon-img">
+        <div class="pb-card-7col-title">Family Health Insurance</div>
+      </div>
+
+      <div class="pb-card-7col" onclick="App.openEnquireModal('Travel Insurance')">
+        <img src="/static/images/clean_icons/travel_insurance.png?v=11" alt="Travel Insurance" class="pb-card-icon-img">
+        <div class="pb-card-7col-title">Travel Insurance</div>
+      </div>
+
+      <div class="pb-card-7col" onclick="App.openEnquireModal('Retirement Plans')">
+        <img src="/static/images/clean_icons/retirement_plans.png?v=11" alt="Retirement Plans" class="pb-card-icon-img">
+        <div class="pb-card-7col-title">Retirement Plans</div>
+      </div>
+
+      <div class="pb-card-7col" onclick="App.openEnquireModal('Employee Group Health Insurance')">
+        <img src="/static/images/clean_icons/employee_group_health_insurance.png?v=11"
+          alt="Employee Group Health Insurance" class="pb-card-icon-img">
+        <div class="pb-card-7col-title">Employee Group Health Insurance</div>
+      </div>
+
+      <div class="pb-card-7col" onclick="App.openEnquireModal('Home Insurance')">
+        <img src="/static/images/clean_icons/home_insurance.png?v=11" alt="Home Insurance" class="pb-card-icon-img">
+        <div class="pb-card-7col-title">Home Insurance</div>
+      </div>
+
+      <div class="pb-card-7col" onclick="App.openEnquireModal('Family Office')">
+        <img src="/static/images/clean_icons/family_office.png?v=11" alt="Family Office" class="pb-card-icon-img">
+        <div class="pb-card-7col-title">Family Office</div>
+      </div>
+
+      <div class="pb-card-7col" onclick="App.openEnquireModal('Real Estate')">
+        <img src="/static/images/clean_icons/real_estate.png?v=11" alt="Real Estate" class="pb-card-icon-img">
+        <div class="pb-card-7col-title">Real Estate</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Solutions Section: 3 IN A ROW BANNERS -->
+  <section id="featured-solutions" style="max-width:1350px; margin:40px auto; padding:0 6%;">
+    <div style="text-align:center; margin-bottom:24px;">
+      <h2 style="font-size:2rem; font-weight:800; color:#0f172a;">Featured Financial Solutions</h2>
+    </div>
+
+    <!-- 3 IN A ROW BANNERS GRID -->
+    <div class="banners-grid-3col">
+      <!-- 1. Family Office -->
+      <div class="banner-card-short" onclick="App.openEnquireModal('Family Office')">
+        <img src="/static/images/featured_family_office.jpg?v=2" alt="Family Office — Secure Today. Prosper Forever.">
+      </div>
+
+      <!-- 2. Real Estate -->
+      <div class="banner-card-short" onclick="App.openEnquireModal('Real Estate')">
+        <img src="/static/images/featured_real_estate.jpg?v=2" alt="Real Estate — Buy Your Dream Home">
+      </div>
+
+      <!-- 3. Loan Solutions -->
+      <div class="banner-card-short" onclick="App.openEnquireModal('Loan Solutions')">
+        <img src="/static/images/featured_loans.jpg?v=2" alt="Loan Solutions — Loans For Every Need">
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Categorized Products Section (Placed After Featured Financial Solutions) -->
+  <section id="categorized-products" style="max-width:1350px; margin:50px auto 30px; padding:0 6%;">
+    <!-- Category: PERSONAL INSURANCE -->
+    <div style="margin-bottom:40px;">
+      <div
+        style="display:flex; align-items:center; gap:10px; margin-bottom:18px; border-bottom:2px solid #e2e8f0; padding-bottom:8px;">
+        <span style="font-size:1.3rem;">🛡️</span>
+        <h3 style="font-size:1.15rem; font-weight:800; color:#0f172a; letter-spacing:0.5px; margin:0;">PERSONAL
+          INSURANCE</h3>
+      </div>
+      <div class="cat-grid-5col">
+        <div class="pb-card-7col" onclick="App.openEnquireModal('Free of Cost Term Life Insurance')">
+          <img src="/static/images/grouped_icons/free_term_life.png?v=1" alt="Free of Cost Term Life Insurance"
+            class="pb-card-icon-img">
+          <div class="pb-card-7col-title">Free of Cost Term Life Insurance</div>
+        </div>
+        <div class="pb-card-7col" onclick="App.openEnquireModal('Term Plans with Return of Premium')">
+          <img src="/static/images/grouped_icons/term_plans_rop.png?v=1" alt="Term Plans with Return of Premium"
+            class="pb-card-icon-img">
+          <div class="pb-card-7col-title">Term Plans with Return of Premium</div>
+        </div>
+        <div class="pb-card-7col" onclick="App.openEnquireModal('Term Insurance (Women)')">
+          <img src="/static/images/grouped_icons/term_insurance_women.png?v=1" alt="Term Insurance (Women)"
+            class="pb-card-icon-img">
+          <div class="pb-card-7col-title">Term Insurance (Women)</div>
+        </div>
+        <div class="pb-card-7col" onclick="App.openEnquireModal('Term Life Insurance (Self Employed)')">
+          <img src="/static/images/grouped_icons/term_life_self_employed.png?v=1"
+            alt="Term Life Insurance (Self Employed)" class="pb-card-icon-img">
+          <div class="pb-card-7col-title">Term Life Insurance (Self Employed)</div>
+        </div>
+        <div class="pb-card-7col" onclick="App.openEnquireModal('Term Life Insurance (NRIs)')">
+          <img src="/static/images/grouped_icons/term_life_nri_global.png?v=1" alt="Term Life Insurance (NRIs)"
+            class="pb-card-icon-img">
+          <div class="pb-card-7col-title">Term Life Insurance (NRIs)</div>
+        </div>
+        <div class="pb-card-7col" onclick="App.openEnquireModal('Home Loan Insurance')">
+          <img src="/static/images/grouped_icons/home_loan_insurance.png?v=1" alt="Home Loan Insurance"
+            class="pb-card-icon-img">
+          <div class="pb-card-7col-title">Home Loan Insurance</div>
+        </div>
+        <div class="pb-card-7col" onclick="App.openEnquireModal('Dollar Based Term Plan')">
+          <img src="/static/images/grouped_icons/dollar_term_plan.png?v=1" alt="Dollar Based Term Plan"
+            class="pb-card-icon-img">
+          <div class="pb-card-7col-title">Dollar Based Term Plan</div>
+        </div>
+        <div class="pb-card-7col" onclick="App.openEnquireModal('Term Insurance for Diabetic')">
+          <img src="/static/images/grouped_icons/term_insurance_diabetic.png?v=1" alt="Term Insurance for Diabetic"
+            class="pb-card-icon-img">
+          <div class="pb-card-7col-title">Term Insurance for Diabetic</div>
+        </div>
+      </div>
+    </div>
+    <!-- Category: INVESTMENT PLANS -->
+    <div style="margin-bottom:40px;">
+      <div
+        style="display:flex; align-items:center; gap:10px; margin-bottom:18px; border-bottom:2px solid #e2e8f0; padding-bottom:8px;">
+        <span style="font-size:1.3rem;">📈</span>
+        <h3 style="font-size:1.15rem; font-weight:800; color:#0f172a; letter-spacing:0.5px; margin:0;">INVESTMENT PLANS
+        </h3>
+      </div>
+      <div class="cat-grid-5col">
+        <div class="pb-card-7col" onclick="App.openEnquireModal('LIC Plans')">
+          <img src="/static/images/grouped_icons/lic_plans.png?v=1" alt="LIC Plans" class="pb-card-icon-img">
+          <div class="pb-card-7col-title">LIC Plans</div>
+        </div>
+        <div class="pb-card-7col" onclick="App.openEnquireModal('Investment')">
+          <img src="/static/images/grouped_icons/investment_general.png?v=1" alt="Investment" class="pb-card-icon-img">
+          <div class="pb-card-7col-title">Investment</div>
+        </div>
+        <div class="pb-card-7col" onclick="App.openEnquireModal('Child Savings Plan')">
+          <img src="/static/images/grouped_icons/child_savings_plan.png?v=1" alt="Child Savings Plan"
+            class="pb-card-icon-img">
+          <div class="pb-card-7col-title">Child Savings Plan</div>
+        </div>
+        <div class="pb-card-7col" onclick="App.openEnquireModal('Guaranteed Return Plan')">
+          <img src="/static/images/grouped_icons/guaranteed_return_plan.png?v=1" alt="Guaranteed Return Plan"
+            class="pb-card-icon-img">
+          <div class="pb-card-7col-title">Guaranteed Return Plan</div>
+        </div>
+        <div class="pb-card-7col" onclick="App.openEnquireModal('Retirement Plan')">
+          <img src="/static/images/grouped_icons/retirement_plan.png?v=1" alt="Retirement Plan"
+            class="pb-card-icon-img">
+          <div class="pb-card-7col-title">Retirement Plan</div>
+        </div>
+        <div class="pb-card-7col" onclick="App.openEnquireModal('Tax Saving Investment')">
+          <img src="/static/images/grouped_icons/tax_saving_investment.png?v=1" alt="Tax Saving Investment"
+            class="pb-card-icon-img">
+          <div class="pb-card-7col-title">Tax Saving Investment</div>
+        </div>
+        <div class="pb-card-7col" onclick="App.openEnquireModal('Pension For Life')">
+          <img src="/static/images/grouped_icons/pension_for_life.png?v=1" alt="Pension For Life"
+            class="pb-card-icon-img">
+          <div class="pb-card-7col-title">Pension For Life</div>
+        </div>
+        <div class="pb-card-7col" onclick="App.openEnquireModal('Smart Deposit')">
+          <img src="/static/images/grouped_icons/smart_deposit.png?v=1" alt="Smart Deposit" class="pb-card-icon-img">
+          <div class="pb-card-7col-title">Smart Deposit</div>
+        </div>
+        <div class="pb-card-7col" onclick="App.openEnquireModal('ULIPs')">
+          <img src="/static/images/grouped_icons/ulips.png?v=1" alt="ULIPs" class="pb-card-icon-img">
+          <div class="pb-card-7col-title">ULIPs</div>
+        </div>
+        <div class="pb-card-7col" onclick="App.openEnquireModal('Dollar Based Investment Plan')">
+          <img src="/static/images/grouped_icons/dollar_investment_plan.png?v=1" alt="Dollar Based Investment Plan"
+            class="pb-card-icon-img">
+          <div class="pb-card-7col-title">Dollar Based Investment Plan</div>
+        </div>
+      </div>
+    </div>
+    <!-- Category: OTHER PLANS -->
+    <div style="margin-bottom:40px;">
+      <div
+        style="display:flex; align-items:center; gap:10px; margin-bottom:18px; border-bottom:2px solid #e2e8f0; padding-bottom:8px;">
+        <span style="font-size:1.3rem;">🚗</span>
+        <h3 style="font-size:1.15rem; font-weight:800; color:#0f172a; letter-spacing:0.5px; margin:0;">OTHER PLANS</h3>
+      </div>
+      <div class="cat-grid-5col">
+        <div class="pb-card-7col" onclick="App.openEnquireModal('Car Insurance')">
+          <img src="/static/images/grouped_icons/car_insurance.png?v=1" alt="Car Insurance" class="pb-card-icon-img">
+          <div class="pb-card-7col-title">Car Insurance</div>
+        </div>
+        <div class="pb-card-7col" onclick="App.openEnquireModal('2 Wheeler Insurance')">
+          <img src="/static/images/grouped_icons/two_wheeler_insurance.png?v=1" alt="2 Wheeler Insurance"
+            class="pb-card-icon-img">
+          <div class="pb-card-7col-title">2 Wheeler Insurance</div>
+        </div>
+        <div class="pb-card-7col" onclick="App.openEnquireModal('Travel Insurance')">
+          <img src="/static/images/grouped_icons/travel_insurance.png?v=1" alt="Travel Insurance"
+            class="pb-card-icon-img">
+          <div class="pb-card-7col-title">Travel Insurance</div>
+        </div>
+        <div class="pb-card-7col" onclick="App.openEnquireModal('Home Insurance')">
+          <img src="/static/images/grouped_icons/home_insurance.png?v=1" alt="Home Insurance" class="pb-card-icon-img">
+          <div class="pb-card-7col-title">Home Insurance</div>
+        </div>
+        <div class="pb-card-7col" onclick="App.openEnquireModal('Tax Insurance')">
+          <img src="/static/images/grouped_icons/tax_insurance.png?v=1" alt="Tax Insurance" class="pb-card-icon-img">
+          <div class="pb-card-7col-title">Tax Insurance</div>
+        </div>
+        <div class="pb-card-7col" onclick="App.openEnquireModal('Commercial Vehicle')">
+          <img src="/static/images/grouped_icons/commercial_vehicle.png?v=1" alt="Commercial Vehicle"
+            class="pb-card-icon-img">
+          <div class="pb-card-7col-title">Commercial Vehicle</div>
+        </div>
+        <div class="pb-card-7col" onclick="App.openEnquireModal('Employee Group Health Insurance')">
+          <img src="/static/images/grouped_icons/employee_group_health.png?v=1" alt="Employee Group Health Insurance"
+            class="pb-card-icon-img">
+          <div class="pb-card-7col-title">Employee Group Health Insurance</div>
+        </div>
+        <div class="pb-card-7col" onclick="App.openEnquireModal('Corporate Insurance')">
+          <img src="/static/images/grouped_icons/corporate_insurance.png?v=1" alt="Corporate Insurance"
+            class="pb-card-icon-img">
+          <div class="pb-card-7col-title">Corporate Insurance</div>
+        </div>
+        <div class="pb-card-7col" onclick="App.openEnquireModal('Pet Insurance')">
+          <img src="/static/images/grouped_icons/pet_insurance.png?v=1" alt="Pet Insurance" class="pb-card-icon-img">
+          <div class="pb-card-7col-title">Pet Insurance</div>
+        </div>
+        <div class="pb-card-7col" onclick="App.openEnquireModal('Personal Cyber Insurance')">
+          <img src="/static/images/grouped_icons/personal_cyber_insurance.png?v=1" alt="Personal Cyber Insurance"
+            class="pb-card-icon-img">
+          <div class="pb-card-7col-title">Personal Cyber Insurance</div>
+        </div>
+      </div>
+    </div>
+    <!-- Category: EMPLOYEE BENEFITS -->
+    <div style="margin-bottom:40px;">
+      <div
+        style="display:flex; align-items:center; gap:10px; margin-bottom:18px; border-bottom:2px solid #e2e8f0; padding-bottom:8px;">
+        <span style="font-size:1.3rem;">👥</span>
+        <h3 style="font-size:1.15rem; font-weight:800; color:#0f172a; letter-spacing:0.5px; margin:0;">EMPLOYEE BENEFITS
+        </h3>
+      </div>
+      <div class="cat-grid-5col">
+        <div class="pb-card-7col" onclick="App.openEnquireModal('Employee Group Health Insurance')">
+          <img src="/static/images/grouped_icons/group_health.png?v=1" alt="Employee Group Health Insurance"
+            class="pb-card-icon-img">
+          <div class="pb-card-7col-title">Employee Group Health Insurance</div>
+        </div>
+        <div class="pb-card-7col" onclick="App.openEnquireModal('Group Personal Accident')">
+          <img src="/static/images/grouped_icons/group_personal_accident.png?v=1" alt="Group Personal Accident"
+            class="pb-card-icon-img">
+          <div class="pb-card-7col-title">Group Personal Accident</div>
+        </div>
+        <div class="pb-card-7col" onclick="App.openEnquireModal('Group Term Life')">
+          <img src="/static/images/grouped_icons/group_term_life.png?v=1" alt="Group Term Life"
+            class="pb-card-icon-img">
+          <div class="pb-card-7col-title">Group Term Life</div>
+        </div>
+        <div class="pb-card-7col" onclick="App.openEnquireModal('COVID-19 Group Health Plan')">
+          <img src="/static/images/grouped_icons/covid19_group_health.png?v=1" alt="COVID-19 Group Health Plan"
+            class="pb-card-icon-img">
+          <div class="pb-card-7col-title">COVID-19 Group Health Plan</div>
+        </div>
+      </div>
+    </div>
+    <!-- Category: ENGINEERING -->
+    <div style="margin-bottom:40px;">
+      <div
+        style="display:flex; align-items:center; gap:10px; margin-bottom:18px; border-bottom:2px solid #e2e8f0; padding-bottom:8px;">
+        <span style="font-size:1.3rem;">🏗️</span>
+        <h3 style="font-size:1.15rem; font-weight:800; color:#0f172a; letter-spacing:0.5px; margin:0;">ENGINEERING</h3>
+      </div>
+      <div class="cat-grid-5col">
+        <div class="pb-card-7col" onclick="App.openEnquireModal('Contractor\'s All Risk')">
+          <img src="/static/images/grouped_icons/contractors_all_risk.png?v=1" alt="Contractor's All Risk"
+            class="pb-card-icon-img">
+          <div class="pb-card-7col-title">Contractor's All Risk</div>
+        </div>
+        <div class="pb-card-7col" onclick="App.openEnquireModal('Erection All Risk')">
+          <img src="/static/images/grouped_icons/erection_all_risk.png?v=1" alt="Erection All Risk"
+            class="pb-card-icon-img">
+          <div class="pb-card-7col-title">Erection All Risk</div>
+        </div>
+        <div class="pb-card-7col" onclick="App.openEnquireModal('Contractor\'s Plant & Machinery')">
+          <img src="/static/images/grouped_icons/contractors_plant_machinery.png?v=1"
+            alt="Contractor's Plant & Machinery" class="pb-card-icon-img">
+          <div class="pb-card-7col-title">Contractor's Plant & Machinery</div>
+        </div>
+      </div>
+    </div>
+    <!-- Category: MARINE & PROPERTY INSURANCE -->
+    <div style="margin-bottom:40px;">
+      <div
+        style="display:flex; align-items:center; gap:10px; margin-bottom:18px; border-bottom:2px solid #e2e8f0; padding-bottom:8px;">
+        <span style="font-size:1.3rem;">🚢</span>
+        <h3 style="font-size:1.15rem; font-weight:800; color:#0f172a; letter-spacing:0.5px; margin:0;">MARINE & PROPERTY
+          INSURANCE</h3>
+      </div>
+      <div class="cat-grid-5col">
+        <div class="pb-card-7col" onclick="App.openEnquireModal('Marine Insurance')">
+          <img src="/static/images/grouped_icons/marine_insurance.png?v=1" alt="Marine Insurance"
+            class="pb-card-icon-img">
+          <div class="pb-card-7col-title">Marine Insurance</div>
+        </div>
+        <div class="pb-card-7col" onclick="App.openEnquireModal('Fire & Burglary')">
+          <img src="/static/images/grouped_icons/fire_and_burglary.png?v=1" alt="Fire & Burglary"
+            class="pb-card-icon-img">
+          <div class="pb-card-7col-title">Fire & Burglary</div>
+        </div>
+        <div class="pb-card-7col" onclick="App.openEnquireModal('Shop Owner Insurance')">
+          <img src="/static/images/grouped_icons/shop_owner_open.png?v=1" alt="Shop Owner Insurance"
+            class="pb-card-icon-img">
+          <div class="pb-card-7col-title">Shop Owner Insurance</div>
+        </div>
+        <div class="pb-card-7col" onclick="App.openEnquireModal('Office Package Policy')">
+          <img src="/static/images/grouped_icons/office_policy_desk.png?v=1" alt="Office Package Policy"
+            class="pb-card-icon-img">
+          <div class="pb-card-7col-title">Office Package Policy</div>
+        </div>
+      </div>
+    </div>
+    <!-- Category: LIABILITY -->
+    <div style="margin-bottom:40px;">
+      <div
+        style="display:flex; align-items:center; gap:10px; margin-bottom:18px; border-bottom:2px solid #e2e8f0; padding-bottom:8px;">
+        <span style="font-size:1.3rem;">⚖️</span>
+        <h3 style="font-size:1.15rem; font-weight:800; color:#0f172a; letter-spacing:0.5px; margin:0;">LIABILITY</h3>
+      </div>
+      <div class="cat-grid-5col">
+        <div class="pb-card-7col" onclick="App.openEnquireModal('Professional Indemnity for Doctors')">
+          <img src="/static/images/grouped_icons/professional_indemnity_doctors.png?v=1"
+            alt="Professional Indemnity for Doctors" class="pb-card-icon-img">
+          <div class="pb-card-7col-title">Professional Indemnity for Doctors</div>
+        </div>
+        <div class="pb-card-7col" onclick="App.openEnquireModal('Professional Indemnity for Companies')">
+          <img src="/static/images/grouped_icons/professional_indemnity_companies.png?v=1"
+            alt="Professional Indemnity for Companies" class="pb-card-icon-img">
+          <div class="pb-card-7col-title">Professional Indemnity for Companies</div>
+        </div>
+        <div class="pb-card-7col" onclick="App.openEnquireModal('Workmen Compensation')">
+          <img src="/static/images/grouped_icons/workmen_compensation.png?v=1" alt="Workmen Compensation"
+            class="pb-card-icon-img">
+          <div class="pb-card-7col-title">Workmen Compensation</div>
+        </div>
+        <div class="pb-card-7col" onclick="App.openEnquireModal('General Liability')">
+          <img src="/static/images/grouped_icons/general_liability.png?v=1" alt="General Liability"
+            class="pb-card-icon-img">
+          <div class="pb-card-7col-title">General Liability</div>
+        </div>
+        <div class="pb-card-7col" onclick="App.openEnquireModal('Cyber Risk Insurance')">
+          <img src="/static/images/grouped_icons/cyber_risk_insurance.png?v=1" alt="Cyber Risk Insurance"
+            class="pb-card-icon-img">
+          <div class="pb-card-7col-title">Cyber Risk Insurance</div>
+        </div>
+        <div class="pb-card-7col" onclick="App.openEnquireModal('Directors & Officers Liability')">
+          <img src="/static/images/grouped_icons/directors_officers_liability.png?v=1"
+            alt="Directors & Officers Liability" class="pb-card-icon-img">
+          <div class="pb-card-7col-title">Directors & Officers Liability</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Insurer Partners Bar -->
+  <section style="background:#ffffff; border-top:1px solid #e2e8f0; padding:30px 6%; text-align:center;">
+    <div
+      style="display:flex; justify-content:center; align-items:center; gap:32px; flex-wrap:wrap; font-weight:800; font-size:1rem; color:#1e293b; opacity:0.85;">
+      <span>HDFC ERGO</span>
+      <span>Star Health</span>
+      <span>ICICI Lombard</span>
+      <span>Niva Bupa</span>
+      <span>LIC of India</span>
+      <span>Max Life</span>
+      <span>TATA AIA</span>
+      <span>SBI Mutual Fund</span>
+    </div>
+  </section>
+
+  <!-- Footer (Tail Section) -->
+  <footer style="background:#ffffff; color:#334155; padding:50px 6% 30px; border-top:1px solid #e2e8f0;">
+    <div
+      style="display:grid; grid-template-columns:2fr repeat(3, 1fr); gap:30px; max-width:1350px; margin:0 auto 30px;">
+      <div>
+        <img src="/static/images/nidhiiq_footer_logo.png?v=3" alt="NidhiIQ Footer Logo"
+          style="height: 175px; width: auto; object-fit: contain;">
+      </div>
+      <div>
+        <h4 style="color:#0f172a; font-weight:800; margin-bottom:14px; font-size:1rem;">Life & Health</h4>
+        <ul style="list-style:none; font-size:0.88rem; padding:0; margin:0; line-height:2;">
+          <li><a href="javascript:void(0)" onclick="App.openEnquireModal('Term Life Insurance')"
+              style="color:#475569; text-decoration:none;">Term Insurance</a></li>
+          <li><a href="javascript:void(0)" onclick="App.openEnquireModal('Health Insurance')"
+              style="color:#475569; text-decoration:none;">Health Insurance</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="color:#0f172a; font-weight:800; margin-bottom:14px; font-size:1rem;">Financial Solutions</h4>
+        <ul style="list-style:none; font-size:0.88rem; padding:0; margin:0; line-height:2;">
+          <li><a href="javascript:void(0)" onclick="App.openEnquireModal('Real Estate')"
+              style="color:#475569; text-decoration:none;">Real Estate Advisory</a></li>
+          <li><a href="javascript:void(0)" onclick="App.openEnquireModal('Loan Solutions')"
+              style="color:#475569; text-decoration:none;">Loan Solutions</a></li>
+          <li><a href="javascript:void(0)" onclick="App.openEnquireModal('Family Office')"
+              style="color:#475569; text-decoration:none;">Family Office Wealth</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="color:#0f172a; font-weight:800; margin-bottom:14px; font-size:1rem;">Contact</h4>
+        <ul style="list-style:none; font-size:0.88rem; padding:0; margin:0; line-height:1.8;">
+          <li>📞 <a href="tel:+916361839979" style="color:#475569; text-decoration:none;">+91 63618 39979</a></li>
+          <li>✉️ <a href="mailto:suman@nidhiiq.com" style="color:#475569; text-decoration:none;">suman@nidhiiq.com</a>
+          </li>
+          <li style="margin-top:8px; color:#475569; line-height:1.5;">📍 Ground Floor, Behive, HSR Silkboard,
+            Bengaluru-560068, Karnataka, INDIA.</li>
+        </ul>
+      </div>
+    </div>
+    <div style="text-align:center; font-size:0.82rem; color:#94a3b8; border-top:1px solid #e2e8f0; padding-top:20px;">
+      © 2026 NidhiIQ Financial Intelligence Platform. All Rights Reserved.
+    </div>
+  </footer>
+
+  <!-- EXACT ENQUIRE POP-UP MODAL -->
+  <div id="enquireModal" class="modal-overlay">
+    <div class="modal-content-enquire">
+      <button class="modal-close-btn" onclick="App.closeEnquireModal()">✕</button>
+
+      <div class="enquire-title" id="enquireModalTitle">Enquire about Other Plans</div>
+      <div class="enquire-subtitle">Share your details — a NidhiIQ advisor will reach out shortly.</div>
+
+      <form id="enquireForm">
+        <!-- Full Name -->
+        <div class="form-field-group">
+          <label class="form-field-label">Full name</label>
+          <input type="text" id="enquireName" class="form-input-text" required placeholder="e.g. Ananya Sharma">
+        </div>
+
+        <!-- Contact Number -->
+        <div class="form-field-group">
+          <label class="form-field-label">Contact number</label>
+          <div class="phone-input-wrap">
+            <div class="phone-prefix">+91</div>
+            <input type="tel" id="enquirePhone" class="phone-input-text" required placeholder="10-digit mobile"
+              maxlength="10">
+          </div>
+        </div>
+
+        <!-- Your Requirement Brief -->
+        <div class="form-field-group">
+          <label class="form-field-label">Your requirement (brief)</label>
+          <textarea id="enquireReq" class="form-textarea" rows="3" placeholder="Briefly describe what you need..."
+            maxlength="500" oninput="App.updateCharCount(this)"></textarea>
+          <div class="char-counter" id="charCounter">0/500</div>
+        </div>
+
+        <div id="enquireMsg" style="display:none; margin-bottom:12px;"></div>
+
+        <!-- Submit & Continue on WhatsApp -->
+        <button type="submit" class="btn-whatsapp-submit">
+          ✈️ Submit & continue on WhatsApp 💬
+        </button>
+      </form>
+
+      <!-- Footer Note -->
+      <div class="footer-note-text">
+        On submit, your email client opens with a draft to suman@nidhiiq.com and WhatsApp opens a chat with +91 63618
+        39979.
+      </div>
+    </div>
+  </div>
+
+  <script src="/static/js/quote_engine.js"></script>
+  <script src="/static/js/app.js"></script>
+</body>
+
+</html>
