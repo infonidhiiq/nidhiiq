@@ -29,7 +29,7 @@ const App = {
     const dots = document.querySelectorAll('.hero-dot');
     if (!track) return;
 
-    this.currentHeroSlide = (index + 3) % 3;
+    this.currentHeroSlide = (index + 2) % 2;
     track.style.transform = `translateX(-${this.currentHeroSlide * 100}%)`;
 
     dots.forEach((dot, idx) => {
