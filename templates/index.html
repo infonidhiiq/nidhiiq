@@ -124,41 +124,43 @@
   </div>
 
   <!-- Header Navigation matching User Screenshot -->
-  <header class="pb-navbar" style="padding: 10px 5%;">
-    <a href="#" style="display:flex; align-items:center; text-decoration:none;">
-      <img src="/static/images/nidhiiq_wordmark_logo.png?v=6" alt="NidhiIQ Official Wordmark"
-        style="height: 28px; max-height: 30px; width: auto; object-fit: contain;">
-    </a>
-
-    <!-- Navbar items matching exact requested screenshot layout -->
-    <ul class="nidhi-header-menu">
-      <li><a href="#products" class="nidhi-header-link">Insurance</a></li>
-      <li><a href="#featured-solutions" class="nidhi-header-link">Investments</a></li>
-      <li><a href="javascript:void(0)" onclick="App.openEnquireModal('Retirement Plans')"
-          class="nidhi-header-link">Retirement</a></li>
-      <li><a href="javascript:void(0)" onclick="App.openEnquireModal('Family Office')" class="nidhi-header-link">Family
-          Office</a></li>
-      <li><a href="javascript:void(0)" onclick="App.openEnquireModal('Real Estate')" class="nidhi-header-link">Real
-          Estate</a></li>
-      <li class="nidhi-nav-divider">|</li>
-      <li><a href="javascript:void(0)" onclick="App.openEnquireModal('Loan Solutions')"
-          class="nidhi-header-link">Loan</a></li>
-      <li class="nidhi-nav-divider">|</li>
-      <li><a href="javascript:void(0)" onclick="App.openEnquireModal('About NidhiIQ')" class="nidhi-header-link">About
-          ▾</a></li>
-    </ul>
-
-    <!-- 'In News ›' Green Pill Button linking to YouTube -->
-    <div>
-      <a href="https://www.youtube.com/@NidhiIQOfficial" target="_blank" rel="noopener noreferrer" class="btn-in-news">
-        In News ›
+  <header class="pb-navbar">
+    <div class="pb-navbar-inner nidhi-container">
+      <a href="#" style="display:flex; align-items:center; text-decoration:none;">
+        <img src="/static/images/nidhiiq_wordmark_logo.png?v=6" alt="NidhiIQ Official Wordmark"
+          style="height: 28px; max-height: 30px; width: auto; object-fit: contain;">
       </a>
+
+      <!-- Navbar items matching exact requested screenshot layout -->
+      <ul class="nidhi-header-menu">
+        <li><a href="#products" class="nidhi-header-link">Insurance</a></li>
+        <li><a href="#featured-solutions" class="nidhi-header-link">Investments</a></li>
+        <li><a href="javascript:void(0)" onclick="App.openEnquireModal('Retirement Plans')"
+            class="nidhi-header-link">Retirement</a></li>
+        <li><a href="javascript:void(0)" onclick="App.openEnquireModal('Family Office')" class="nidhi-header-link">Family
+            Office</a></li>
+        <li><a href="javascript:void(0)" onclick="App.openEnquireModal('Real Estate')" class="nidhi-header-link">Real
+            Estate</a></li>
+        <li class="nidhi-nav-divider">|</li>
+        <li><a href="javascript:void(0)" onclick="App.openEnquireModal('Loan Solutions')"
+            class="nidhi-header-link">Loan</a></li>
+        <li class="nidhi-nav-divider">|</li>
+        <li><a href="javascript:void(0)" onclick="App.openEnquireModal('About NidhiIQ')" class="nidhi-header-link">About
+            ▾</a></li>
+      </ul>
+
+      <!-- 'In News ›' Green Pill Button linking to YouTube -->
+      <div>
+        <a href="https://www.youtube.com/@NidhiIQOfficial" target="_blank" rel="noopener noreferrer" class="btn-in-news">
+          In News ›
+        </a>
+      </div>
     </div>
   </header>
 
   <!-- PolicyBazaar Hero Section -->
   <section style="background:#ffffff; border-bottom:1px solid #e2e8f0; padding-bottom:10px;">
-    <div class="pb-hero-container">
+    <div class="pb-hero-container nidhi-container">
       <div>
         <h1 class="pb-hero-title">Let's find you<br>the <strong>Smarter Financial Future</strong></h1>
         <div class="pb-sub-bullets">
@@ -176,8 +178,11 @@
       <!-- Right Side Compact Slideover Carousel -->
       <div class="hero-slider-wrapper">
         <div class="hero-slider-track" id="heroSliderTrack">
-
-
+          <!-- Slide 1 -->
+          <div class="hero-slide-item" onclick="App.openEnquireModal('Health Insurance Discount')">
+            <img src="/static/images/hero_slides/hero_slide_1.png?v=1" alt="Health Insurance Discount"
+              class="hero-slide-img">
+          </div>
           <!-- Slide 2 -->
           <div class="hero-slide-item" onclick="App.openEnquireModal('Pet Insurance Protection')">
             <img src="/static/images/hero_slides/hero_slide_2.jpg?v=1" alt="Pet Insurance Protection"
@@ -662,19 +667,25 @@
       </div>
     </div>
     <!-- Regulatory Information Section -->
-    <div style="max-width:1350px; margin:24px auto 0; border-top:1px solid #e2e8f0; padding-top:20px; font-size:0.80rem; color:#64748b; line-height:1.7;">
-      <h5 style="color:#0f172a; font-weight:800; font-size:0.88rem; margin-bottom:10px; text-transform:uppercase; letter-spacing:0.5px;">Regulatory Information</h5>
+    <div
+      style="max-width:1350px; margin:24px auto 0; border-top:1px solid #e2e8f0; padding-top:20px; font-size:0.80rem; color:#64748b; line-height:1.7;">
+      <h5
+        style="color:#0f172a; font-weight:800; font-size:0.88rem; margin-bottom:10px; text-transform:uppercase; letter-spacing:0.5px;">
+        Regulatory Information</h5>
       <ul style="list-style:none; padding:0; margin:0; display:grid; gap:6px;">
-        <li>• NidhiIQ is authorized to distribute financial products in accordance with applicable regulatory guidelines.</li>
-        <li>• IRDAI Life Insurance License No.: 135612</li>
-        <li>• IRDAI General Insurance License No.: ILGD00062787</li>
-        <li>• AMFI Registration Number (ARN): ARN-366076</li>
-        <li>• Investment in Mutual Funds is subject to market risks. Please read all scheme-related documents carefully before investing.</li>
+        <li>• NidhiIQ is authorized to distribute financial products in accordance with applicable regulatory
+          guidelines.
+        <li>• IRDAI Life Insurance License No.: 135612
+        <li>• IRDAI General Insurance License No.: ILGD00062787
+        <li>• AMFI Registration Number (ARN): ARN-366076
+        <li>• Investment in Mutual Funds is subject to market risks. Please read all scheme-related documents carefully
+          before investing.
         <li>• Insurance is the subject matter of solicitation.</li>
       </ul>
     </div>
 
-    <div style="text-align:center; font-size:0.82rem; color:#94a3b8; border-top:1px solid #e2e8f0; padding-top:20px; margin-top:20px;">
+    <div
+      style="text-align:center; font-size:0.82rem; color:#94a3b8; border-top:1px solid #e2e8f0; padding-top:20px; margin-top:20px;">
       © 2026 NidhiIQ Financial Intelligence Platform. All Rights Reserved.
     </div>
   </footer>
