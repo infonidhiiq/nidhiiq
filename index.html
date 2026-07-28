@@ -173,13 +173,33 @@
         </div>
       </div>
 
-      <!-- Right Promo Card -->
-      <div class="pb-promo-card">
-        <div class="pb-promo-title">Best time to buy Health Insurance is now</div>
-        <div class="pb-promo-badge-yellow">Additional discount up to 25%*</div>
-        <div style="font-size:0.85rem; margin-bottom:16px; opacity:0.9;">0%* GST on health insurance plans</div>
-        <button class="pb-promo-btn" onclick="App.openEnquireModal('Health Insurance Promo')">View plans ›</button>
-        <div style="position:absolute; bottom:14px; right:20px; font-size:1.2rem; opacity:0.6;">● ○ ○</div>
+      <!-- Right Side Compact Slideover Carousel -->
+      <div class="hero-slider-wrapper">
+        <div class="hero-slider-track" id="heroSliderTrack">
+          <!-- Slide 1 -->
+          <div class="hero-slide-item" onclick="App.openEnquireModal('Health Insurance Discount')">
+            <img src="/static/images/hero_slides/hero_slide_1.png?v=1" alt="Health Insurance Discount" class="hero-slide-img">
+          </div>
+          <!-- Slide 2 -->
+          <div class="hero-slide-item" onclick="App.openEnquireModal('Pet Insurance Protection')">
+            <img src="/static/images/hero_slides/hero_slide_2.jpg?v=1" alt="Pet Insurance Protection" class="hero-slide-img">
+          </div>
+          <!-- Slide 3 -->
+          <div class="hero-slide-item" onclick="App.openEnquireModal('Child Future Savings')">
+            <img src="/static/images/hero_slides/hero_slide_3.jpg?v=1" alt="Child Future Savings" class="hero-slide-img">
+          </div>
+        </div>
+
+        <!-- Slider Arrow Controls -->
+        <button class="hero-slider-arrow hero-arrow-left" onclick="App.prevHeroSlide(event)" aria-label="Previous Slide">‹</button>
+        <button class="hero-slider-arrow hero-arrow-right" onclick="App.nextHeroSlide(event)" aria-label="Next Slide">›</button>
+
+        <!-- Slider Pagination Dots -->
+        <div class="hero-slider-dots">
+          <span class="hero-dot active" onclick="App.goToHeroSlide(0, event)"></span>
+          <span class="hero-dot" onclick="App.goToHeroSlide(1, event)"></span>
+          <span class="hero-dot" onclick="App.goToHeroSlide(2, event)"></span>
+        </div>
       </div>
     </div>
 
