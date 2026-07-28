@@ -111,13 +111,13 @@
   <!-- Top Header Tagline Bar -->
   <div class="pb-top-bar" style="padding: 4px 5%;">
     <div
-      style="display:flex; justify-content:center; align-items:center; gap:16px; flex-wrap:wrap; text-align:center; width:100%;">
-      <div style="font-size:0.72rem; letter-spacing:0.5px; text-transform:uppercase;">
+      style="display:flex; justify-content:center; align-items:center; gap:14px; flex-wrap:wrap; text-align:center; width:100%;">
+      <div style="font-size:0.68rem; letter-spacing:0.4px; text-transform:uppercase;">
         <span style="color:#046a38; font-weight:800;">FINANCIAL INTELLIGENCE.</span>
         <span style="color:#780016; font-weight:800; margin-left:3px;">LIFELONG PROSPERITY.</span>
       </div>
-      <div style="color:#cbd5e1; font-weight:300; font-size:0.75rem;">|</div>
-      <div style="font-size:0.76rem;">
+      <div style="color:#cbd5e1; font-weight:300; font-size:0.7rem;">|</div>
+      <div style="font-size:0.70rem;">
         <span style="color:#046a38; font-weight:800;">वित्तीय बुद्धिमत्ता।</span>
         <span style="color:#780016; font-weight:800; margin-left:4px;">जीवनभर की समृद्धि।</span>
       </div>
@@ -151,11 +151,11 @@
             ▾</a></li>
       </ul>
 
-      <!-- 'In News ›' Green Pill Button linking to YouTube -->
+      <!-- 'News ›' Green Pill Button linking to YouTube -->
       <div>
         <a href="https://www.youtube.com/@NidhiIQOfficial" target="_blank" rel="noopener noreferrer"
           class="btn-in-news">
-          In News ›
+          News ›
         </a>
       </div>
     </div>
@@ -609,141 +609,236 @@
     </div>
   </section>
 
-  <!-- Client Reviews & Testimonials Section (Scrollable Carousel) -->
-  <section style="background:#f8fafc; border-top:1px solid #e2e8f0; border-bottom:1px solid #e2e8f0; padding:50px 0;">
-    <div class="nidhi-container">
-      <div style="display:flex; justify-content:space-between; align-items:flex-end; margin-bottom:24px; flex-wrap:wrap; gap:12px;">
-        <div>
-          <div style="font-size:0.85rem; font-weight:800; color:#046a38; letter-spacing:1px; text-transform:uppercase; margin-bottom:4px;">REVIEWS</div>
-          <h2 style="font-size:1.6rem; font-weight:800; color:#0f172a; margin:0;">Why Clients Trust NidhiIQ</h2>
-        </div>
-        <!-- Scroll Arrow Navigation Controls -->
-        <div style="display:flex; gap:8px;">
-          <button onclick="App.scrollReviews('left')" style="width:36px; height:36px; border-radius:50%; background:#ffffff; border:1px solid #cbd5e1; color:#0f172a; font-size:1.1rem; cursor:pointer; display:flex; align-items:center; justify-content:center; box-shadow:0 2px 6px rgba(0,0,0,0.05);" aria-label="Scroll left">‹</button>
-          <button onclick="App.scrollReviews('right')" style="width:36px; height:36px; border-radius:50%; background:#ffffff; border:1px solid #cbd5e1; color:#0f172a; font-size:1.1rem; cursor:pointer; display:flex; align-items:center; justify-content:center; box-shadow:0 2px 6px rgba(0,0,0,0.05);" aria-label="Scroll right">›</button>
-        </div>
-      </div>
+  <!-- Client Reviews & Testimonials Section (Auto-Scrolling Marquee) -->
+  <section style="background:#f8fafc; border-top:1px solid #e2e8f0; border-bottom:1px solid #e2e8f0; padding:36px 0; overflow:hidden;">
+    <div class="nidhi-container" style="margin-bottom:16px;">
+      <div style="font-size:0.78rem; font-weight:800; color:#046a38; letter-spacing:1px; text-transform:uppercase; margin-bottom:2px;">REVIEWS</div>
+      <h2 style="font-size:1.35rem; font-weight:800; color:#0f172a; margin:0;">Why Clients Trust NidhiIQ</h2>
+    </div>
 
-      <!-- Scrollable Reviews Track -->
-      <div id="reviewsScrollTrack" class="reviews-scroll-container">
-        <!-- Review 1 -->
-        <div class="review-card">
-          <div class="review-card-header">
-            <div class="review-avatar">RK</div>
+    <!-- Infinite Auto-Scrolling Marquee Track -->
+    <div class="reviews-marquee-wrapper">
+      <div class="reviews-marquee-track">
+        <!-- Set 1 of 10 Cards -->
+        <div class="review-card-sm">
+          <div class="review-card-header-sm">
+            <div class="review-avatar-sm">RK</div>
             <div>
-              <div class="review-author">Rajesh Kumar</div>
-              <div class="review-stars">⭐⭐⭐⭐⭐</div>
+              <div class="review-author-sm">Rajesh Kumar</div>
+              <div class="review-stars-sm">⭐⭐⭐⭐⭐</div>
             </div>
           </div>
-          <p class="review-text">"The entire process was smooth and transparent. I received the right guidance without any pressure. Highly recommended for anyone looking for reliable insurance advice."</p>
+          <p class="review-text-sm">"The entire process was smooth and transparent. I received the right guidance without any pressure. Highly recommended."</p>
         </div>
 
-        <!-- Review 2 -->
-        <div class="review-card">
-          <div class="review-card-header">
-            <div class="review-avatar">PS</div>
+        <div class="review-card-sm">
+          <div class="review-card-header-sm">
+            <div class="review-avatar-sm">PS</div>
             <div>
-              <div class="review-author">Priya Sharma</div>
-              <div class="review-stars">⭐⭐⭐⭐⭐</div>
+              <div class="review-author-sm">Priya Sharma</div>
+              <div class="review-stars-sm">⭐⭐⭐⭐⭐</div>
             </div>
           </div>
-          <p class="review-text">"Excellent customer service! They patiently explained every policy and helped me choose the best plan for my family's future. Truly a wonderful experience."</p>
+          <p class="review-text-sm">"Excellent customer service! They patiently explained every policy and helped me choose the best plan for my family's future."</p>
         </div>
 
-        <!-- Review 3 -->
-        <div class="review-card">
-          <div class="review-card-header">
-            <div class="review-avatar">AR</div>
+        <div class="review-card-sm">
+          <div class="review-card-header-sm">
+            <div class="review-avatar-sm">AR</div>
             <div>
-              <div class="review-author">Anil Reddy</div>
-              <div class="review-stars">⭐⭐⭐⭐⭐</div>
+              <div class="review-author-sm">Anil Reddy</div>
+              <div class="review-stars-sm">⭐⭐⭐⭐⭐</div>
             </div>
           </div>
-          <p class="review-text">"Professional, knowledgeable, and trustworthy. My policy was issued quickly, and all my questions were answered clearly. Thank you for the outstanding support."</p>
+          <p class="review-text-sm">"Professional, knowledgeable, and trustworthy. My policy was issued quickly, and all my questions were answered clearly."</p>
         </div>
 
-        <!-- Review 4 -->
-        <div class="review-card">
-          <div class="review-card-header">
-            <div class="review-avatar">SP</div>
+        <div class="review-card-sm">
+          <div class="review-card-header-sm">
+            <div class="review-avatar-sm">SP</div>
             <div>
-              <div class="review-author">Sneha Patel</div>
-              <div class="review-stars">⭐⭐⭐⭐⭐</div>
+              <div class="review-author-sm">Sneha Patel</div>
+              <div class="review-stars-sm">⭐⭐⭐⭐⭐</div>
             </div>
           </div>
-          <p class="review-text">"I never thought buying insurance could be this simple. The team made everything easy to understand and completed the process without any hassle."</p>
+          <p class="review-text-sm">"I never thought buying insurance could be this simple. The team made everything easy to understand without any hassle."</p>
         </div>
 
-        <!-- Review 5 -->
-        <div class="review-card">
-          <div class="review-card-header">
-            <div class="review-avatar">VM</div>
+        <div class="review-card-sm">
+          <div class="review-card-header-sm">
+            <div class="review-avatar-sm">VM</div>
             <div>
-              <div class="review-author">Vivek Mehta</div>
-              <div class="review-stars">⭐⭐⭐⭐⭐</div>
+              <div class="review-author-sm">Vivek Mehta</div>
+              <div class="review-stars-sm">⭐⭐⭐⭐⭐</div>
             </div>
           </div>
-          <p class="review-text">"Their financial guidance was exceptional. I felt confident making my decision because they explained every option honestly and transparently."</p>
+          <p class="review-text-sm">"Their financial guidance was exceptional. I felt confident making my decision because they explained every option transparently."</p>
         </div>
 
-        <!-- Review 6 -->
-        <div class="review-card">
-          <div class="review-card-header">
-            <div class="review-avatar">KN</div>
+        <div class="review-card-sm">
+          <div class="review-card-header-sm">
+            <div class="review-avatar-sm">KN</div>
             <div>
-              <div class="review-author">Kavya Nair</div>
-              <div class="review-stars">⭐⭐⭐⭐⭐</div>
+              <div class="review-author-sm">Kavya Nair</div>
+              <div class="review-stars-sm">⭐⭐⭐⭐⭐</div>
             </div>
           </div>
-          <p class="review-text">"The team genuinely cares about their customers. From consultation to policy issuance, everything was handled professionally and efficiently."</p>
+          <p class="review-text-sm">"The team genuinely cares about their customers. Everything was handled professionally and efficiently."</p>
         </div>
 
-        <!-- Review 7 -->
-        <div class="review-card">
-          <div class="review-card-header">
-            <div class="review-avatar">RV</div>
+        <div class="review-card-sm">
+          <div class="review-card-header-sm">
+            <div class="review-avatar-sm">RV</div>
             <div>
-              <div class="review-author">Rohit Verma</div>
-              <div class="review-stars">⭐⭐⭐⭐⭐</div>
+              <div class="review-author-sm">Rohit Verma</div>
+              <div class="review-stars-sm">⭐⭐⭐⭐⭐</div>
             </div>
           </div>
-          <p class="review-text">"Fast response, excellent service, and complete transparency throughout the process. I would happily recommend them to my friends and family."</p>
+          <p class="review-text-sm">"Fast response, excellent service, and complete transparency throughout. I would happily recommend them to my friends and family."</p>
         </div>
 
-        <!-- Review 8 -->
-        <div class="review-card">
-          <div class="review-card-header">
-            <div class="review-avatar">PI</div>
+        <div class="review-card-sm">
+          <div class="review-card-header-sm">
+            <div class="review-avatar-sm">PI</div>
             <div>
-              <div class="review-author">Pooja Iyer</div>
-              <div class="review-stars">⭐⭐⭐⭐⭐</div>
+              <div class="review-author-sm">Pooja Iyer</div>
+              <div class="review-stars-sm">⭐⭐⭐⭐⭐</div>
             </div>
           </div>
-          <p class="review-text">"They helped me compare multiple plans and choose the one that perfectly matched my needs. The entire experience exceeded my expectations."</p>
+          <p class="review-text-sm">"They helped me compare multiple plans and choose the one that matched my needs. The experience exceeded my expectations."</p>
         </div>
 
-        <!-- Review 9 -->
-        <div class="review-card">
-          <div class="review-card-header">
-            <div class="review-avatar">SG</div>
+        <div class="review-card-sm">
+          <div class="review-card-header-sm">
+            <div class="review-avatar-sm">SG</div>
             <div>
-              <div class="review-author">Sandeep Gupta</div>
-              <div class="review-stars">⭐⭐⭐⭐⭐</div>
+              <div class="review-author-sm">Sandeep Gupta</div>
+              <div class="review-stars-sm">⭐⭐⭐⭐⭐</div>
             </div>
           </div>
-          <p class="review-text">"Very reliable and customer-focused. I appreciate their honest advice and prompt assistance. It's reassuring to work with professionals who truly care."</p>
+          <p class="review-text-sm">"Very reliable and customer-focused. I appreciate their honest advice and prompt assistance. Truly caring professionals."</p>
         </div>
 
-        <!-- Review 10 -->
-        <div class="review-card">
-          <div class="review-card-header">
-            <div class="review-avatar">AJ</div>
+        <div class="review-card-sm">
+          <div class="review-card-header-sm">
+            <div class="review-avatar-sm">AJ</div>
             <div>
-              <div class="review-author">Aditi Joshi</div>
-              <div class="review-stars">⭐⭐⭐⭐⭐</div>
+              <div class="review-author-sm">Aditi Joshi</div>
+              <div class="review-stars-sm">⭐⭐⭐⭐⭐</div>
             </div>
           </div>
-          <p class="review-text">"One of the best financial service experiences I've had. The process was quick, simple, and completely stress-free. Thank you for your excellent support."</p>
+          <p class="review-text-sm">"One of the best financial service experiences I've had. The process was quick, simple, and completely stress-free."</p>
+        </div>
+
+        <!-- Duplicated Set for Seamless Continuous Infinite Loop -->
+        <div class="review-card-sm">
+          <div class="review-card-header-sm">
+            <div class="review-avatar-sm">RK</div>
+            <div>
+              <div class="review-author-sm">Rajesh Kumar</div>
+              <div class="review-stars-sm">⭐⭐⭐⭐⭐</div>
+            </div>
+          </div>
+          <p class="review-text-sm">"The entire process was smooth and transparent. I received the right guidance without any pressure. Highly recommended."</p>
+        </div>
+
+        <div class="review-card-sm">
+          <div class="review-card-header-sm">
+            <div class="review-avatar-sm">PS</div>
+            <div>
+              <div class="review-author-sm">Priya Sharma</div>
+              <div class="review-stars-sm">⭐⭐⭐⭐⭐</div>
+            </div>
+          </div>
+          <p class="review-text-sm">"Excellent customer service! They patiently explained every policy and helped me choose the best plan for my family's future."</p>
+        </div>
+
+        <div class="review-card-sm">
+          <div class="review-card-header-sm">
+            <div class="review-avatar-sm">AR</div>
+            <div>
+              <div class="review-author-sm">Anil Reddy</div>
+              <div class="review-stars-sm">⭐⭐⭐⭐⭐</div>
+            </div>
+          </div>
+          <p class="review-text-sm">"Professional, knowledgeable, and trustworthy. My policy was issued quickly, and all my questions were answered clearly."</p>
+        </div>
+
+        <div class="review-card-sm">
+          <div class="review-card-header-sm">
+            <div class="review-avatar-sm">SP</div>
+            <div>
+              <div class="review-author-sm">Sneha Patel</div>
+              <div class="review-stars-sm">⭐⭐⭐⭐⭐</div>
+            </div>
+          </div>
+          <p class="review-text-sm">"I never thought buying insurance could be this simple. The team made everything easy to understand without any hassle."</p>
+        </div>
+
+        <div class="review-card-sm">
+          <div class="review-card-header-sm">
+            <div class="review-avatar-sm">VM</div>
+            <div>
+              <div class="review-author-sm">Vivek Mehta</div>
+              <div class="review-stars-sm">⭐⭐⭐⭐⭐</div>
+            </div>
+          </div>
+          <p class="review-text-sm">"Their financial guidance was exceptional. I felt confident making my decision because they explained every option transparently."</p>
+        </div>
+
+        <div class="review-card-sm">
+          <div class="review-card-header-sm">
+            <div class="review-avatar-sm">KN</div>
+            <div>
+              <div class="review-author-sm">Kavya Nair</div>
+              <div class="review-stars-sm">⭐⭐⭐⭐⭐</div>
+            </div>
+          </div>
+          <p class="review-text-sm">"The team genuinely cares about their customers. Everything was handled professionally and efficiently."</p>
+        </div>
+
+        <div class="review-card-sm">
+          <div class="review-card-header-sm">
+            <div class="review-avatar-sm">RV</div>
+            <div>
+              <div class="review-author-sm">Rohit Verma</div>
+              <div class="review-stars-sm">⭐⭐⭐⭐⭐</div>
+            </div>
+          </div>
+          <p class="review-text-sm">"Fast response, excellent service, and complete transparency throughout. I would happily recommend them to my friends and family."</p>
+        </div>
+
+        <div class="review-card-sm">
+          <div class="review-card-header-sm">
+            <div class="review-avatar-sm">PI</div>
+            <div>
+              <div class="review-author-sm">Pooja Iyer</div>
+              <div class="review-stars-sm">⭐⭐⭐⭐⭐</div>
+            </div>
+          </div>
+          <p class="review-text-sm">"They helped me compare multiple plans and choose the one that matched my needs. The experience exceeded my expectations."</p>
+        </div>
+
+        <div class="review-card-sm">
+          <div class="review-card-header-sm">
+            <div class="review-avatar-sm">SG</div>
+            <div>
+              <div class="review-author-sm">Sandeep Gupta</div>
+              <div class="review-stars-sm">⭐⭐⭐⭐⭐</div>
+            </div>
+          </div>
+          <p class="review-text-sm">"Very reliable and customer-focused. I appreciate their honest advice and prompt assistance. Truly caring professionals."</p>
+        </div>
+
+        <div class="review-card-sm">
+          <div class="review-card-header-sm">
+            <div class="review-avatar-sm">AJ</div>
+            <div>
+              <div class="review-author-sm">Aditi Joshi</div>
+              <div class="review-stars-sm">⭐⭐⭐⭐⭐</div>
+            </div>
+          </div>
+          <p class="review-text-sm">"One of the best financial service experiences I've had. The process was quick, simple, and completely stress-free."</p>
         </div>
       </div>
     </div>
