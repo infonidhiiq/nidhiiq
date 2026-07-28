@@ -26,13 +26,22 @@ body {
   overflow-x: hidden;
 }
 
+.nidhi-container {
+  max-width: 1350px;
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 5%;
+  padding-right: 5%;
+  box-sizing: border-box;
+}
+
 /* Header Bar */
 .pb-top-bar {
   background: #ffffff;
   border-bottom: 1px solid #eef2f8;
   color: #1e293b;
   font-size: 0.85rem;
-  padding: 6px 6%;
+  padding: 6px 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -47,13 +56,16 @@ body {
 .pb-navbar {
   background: #ffffff;
   border-bottom: 1px solid #e2e8f0;
-  padding: 8px 5%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  padding: 10px 0;
   position: sticky;
   top: 0;
   z-index: 1000;
+}
+
+.pb-navbar-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .pb-nav-menu {
@@ -78,7 +90,7 @@ body {
 .pb-hero-container {
   max-width: 1350px;
   margin: 0 auto;
-  padding: 40px 6% 30px;
+  padding: 40px 5% 30px;
   display: grid;
   grid-template-columns: 1.1fr 1fr;
   gap: 40px;
@@ -240,7 +252,7 @@ body {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   gap: 10px;
-  max-width: 1240px;
+  max-width: 1350px;
   margin: 15px auto 30px;
   padding: 0 5%;
 }
