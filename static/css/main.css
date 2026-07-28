@@ -337,105 +337,133 @@ body {
 }
 
 /* Exact Modal Popup Styling from Screenshot */
+/* Sleek Compact Premium Modal Popup */
 .modal-overlay {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(15, 23, 42, 0.65);
-  backdrop-filter: blur(4px);
+  background: rgba(15, 23, 42, 0.55);
+  backdrop-filter: blur(6px);
   display: none;
   align-items: center;
   justify-content: center;
   z-index: 2500;
-  padding: 20px;
+  padding: 16px;
 }
 
 .modal-content-enquire {
-  background: #e2e5e9;
-  border-radius: 24px;
+  background: #ffffff;
+  border-radius: 20px;
   width: 100%;
-  max-width: 540px;
-  padding: 32px 36px;
+  max-width: 410px;
+  padding: 24px 22px 20px;
   position: relative;
-  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.2);
+  border: 1px solid #e2e8f0;
   color: #0f172a;
 }
 
 .modal-close-btn {
   position: absolute;
-  top: 24px;
-  right: 28px;
-  background: transparent;
+  top: 16px;
+  right: 18px;
+  background: #f1f5f9;
   border: none;
-  font-size: 1.3rem;
-  color: #475569;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  font-size: 0.9rem;
+  color: #64748b;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s, color 0.2s;
+}
+
+.modal-close-btn:hover {
+  background: #e2e8f0;
+  color: #0f172a;
 }
 
 .enquire-title {
-  font-size: 1.6rem;
-  font-weight: 700;
+  font-size: 1.25rem;
+  font-weight: 800;
   color: #0f172a;
-  margin-bottom: 6px;
-  letter-spacing: -0.3px;
+  margin-bottom: 4px;
+  letter-spacing: -0.2px;
 }
 
 .enquire-subtitle {
-  color: #475569;
-  font-size: 0.95rem;
-  margin-bottom: 24px;
+  color: #64748b;
+  font-size: 0.84rem;
+  margin-bottom: 18px;
+  line-height: 1.35;
 }
 
 .form-field-group {
-  margin-bottom: 20px;
+  margin-bottom: 14px;
 }
 
 .form-field-label {
-  font-size: 0.95rem;
-  font-weight: 600;
-  color: #0f172a;
-  margin-bottom: 8px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 6px;
   display: block;
 }
 
 .form-input-text {
   width: 100%;
-  padding: 14px 18px;
-  border-radius: 16px;
-  border: 1.5px solid #059669;
-  background: #f1f5f9;
-  font-size: 0.98rem;
+  padding: 10px 14px;
+  border-radius: 12px;
+  border: 1.5px solid #e2e8f0;
+  background: #f8fafc;
+  font-size: 0.9rem;
   color: #0f172a;
   font-family: inherit;
   outline: none;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.form-input-text:focus {
+  border-color: #046a38;
+  background: #ffffff;
 }
 
 .phone-input-wrap {
   display: flex;
-  background: #f1f5f9;
-  border-radius: 16px;
-  border: 1px solid #cbd5e1;
+  background: #f8fafc;
+  border-radius: 12px;
+  border: 1.5px solid #e2e8f0;
   overflow: hidden;
+  transition: border-color 0.2s;
+}
+
+.phone-input-wrap:focus-within {
+  border-color: #046a38;
+  background: #ffffff;
 }
 
 .phone-prefix {
-  padding: 14px 16px;
+  padding: 10px 12px;
+  font-weight: 700;
+  font-size: 0.9rem;
   color: #475569;
-  font-weight: 600;
-  font-size: 0.98rem;
-  border-right: 1px solid #cbd5e1;
+  background: #f1f5f9;
+  border-right: 1px solid #e2e8f0;
   display: flex;
   align-items: center;
 }
 
 .phone-input-text {
   flex: 1;
-  padding: 14px 18px;
+  padding: 10px 14px;
   border: none;
   background: transparent;
-  font-size: 0.98rem;
+  font-size: 0.9rem;
   color: #0f172a;
   font-family: inherit;
   outline: none;
@@ -443,21 +471,27 @@ body {
 
 .form-textarea {
   width: 100%;
-  padding: 14px 18px;
-  border-radius: 16px;
-  border: 1px solid #cbd5e1;
-  background: #f1f5f9;
-  font-size: 0.95rem;
+  padding: 10px 14px;
+  border-radius: 12px;
+  border: 1.5px solid #e2e8f0;
+  background: #f8fafc;
+  font-size: 0.9rem;
   color: #0f172a;
   font-family: inherit;
   outline: none;
   resize: vertical;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.form-textarea:focus {
+  border-color: #046a38;
+  background: #ffffff;
 }
 
 .char-counter {
+  font-size: 0.72rem;
+  color: #94a3b8;
   text-align: right;
-  font-size: 0.8rem;
-  color: #64748b;
   margin-top: 4px;
 }
 
@@ -466,29 +500,31 @@ body {
   background: #046a38;
   color: #ffffff;
   border: none;
-  padding: 16px;
-  border-radius: 18px;
+  padding: 12px 18px;
+  border-radius: 12px;
   font-weight: 700;
-  font-size: 1.05rem;
+  font-size: 0.95rem;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
-  transition: background 0.2s;
-  margin-top: 24px;
+  gap: 8px;
+  transition: background 0.2s, transform 0.15s;
+  margin-top: 16px;
+  box-shadow: 0 4px 12px rgba(4, 106, 56, 0.2);
 }
 
 .btn-whatsapp-submit:hover {
   background: #03522b;
+  transform: translateY(-1px);
 }
 
 .footer-note-text {
-  font-size: 0.78rem;
-  color: #64748b;
+  font-size: 0.74rem;
+  color: #94a3b8;
   text-align: center;
-  margin-top: 16px;
-  line-height: 1.4;
+  margin-top: 12px;
+  line-height: 1.35;
 }
 
 /* Full Mobile Responsive Design System */
