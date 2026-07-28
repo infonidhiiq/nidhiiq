@@ -609,18 +609,143 @@
     </div>
   </section>
 
-  <!-- Insurer Partners Bar -->
-  <section style="background:#ffffff; border-top:1px solid #e2e8f0; padding:30px 6%; text-align:center;">
-    <div
-      style="display:flex; justify-content:center; align-items:center; gap:32px; flex-wrap:wrap; font-weight:800; font-size:1rem; color:#1e293b; opacity:0.85;">
-      <span>HDFC ERGO</span>
-      <span>Star Health</span>
-      <span>ICICI Lombard</span>
-      <span>Niva Bupa</span>
-      <span>LIC of India</span>
-      <span>Max Life</span>
-      <span>TATA AIA</span>
-      <span>SBI Mutual Fund</span>
+  <!-- Client Reviews & Testimonials Section (Scrollable Carousel) -->
+  <section style="background:#f8fafc; border-top:1px solid #e2e8f0; border-bottom:1px solid #e2e8f0; padding:50px 0;">
+    <div class="nidhi-container">
+      <div style="display:flex; justify-content:space-between; align-items:flex-end; margin-bottom:24px; flex-wrap:wrap; gap:12px;">
+        <div>
+          <div style="font-size:0.85rem; font-weight:800; color:#046a38; letter-spacing:1px; text-transform:uppercase; margin-bottom:4px;">REVIEWS</div>
+          <h2 style="font-size:1.6rem; font-weight:800; color:#0f172a; margin:0;">Why Clients Trust NidhiIQ</h2>
+        </div>
+        <!-- Scroll Arrow Navigation Controls -->
+        <div style="display:flex; gap:8px;">
+          <button onclick="App.scrollReviews('left')" style="width:36px; height:36px; border-radius:50%; background:#ffffff; border:1px solid #cbd5e1; color:#0f172a; font-size:1.1rem; cursor:pointer; display:flex; align-items:center; justify-content:center; box-shadow:0 2px 6px rgba(0,0,0,0.05);" aria-label="Scroll left">‹</button>
+          <button onclick="App.scrollReviews('right')" style="width:36px; height:36px; border-radius:50%; background:#ffffff; border:1px solid #cbd5e1; color:#0f172a; font-size:1.1rem; cursor:pointer; display:flex; align-items:center; justify-content:center; box-shadow:0 2px 6px rgba(0,0,0,0.05);" aria-label="Scroll right">›</button>
+        </div>
+      </div>
+
+      <!-- Scrollable Reviews Track -->
+      <div id="reviewsScrollTrack" class="reviews-scroll-container">
+        <!-- Review 1 -->
+        <div class="review-card">
+          <div class="review-card-header">
+            <div class="review-avatar">RK</div>
+            <div>
+              <div class="review-author">Rajesh Kumar</div>
+              <div class="review-stars">⭐⭐⭐⭐⭐</div>
+            </div>
+          </div>
+          <p class="review-text">"The entire process was smooth and transparent. I received the right guidance without any pressure. Highly recommended for anyone looking for reliable insurance advice."</p>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="review-card">
+          <div class="review-card-header">
+            <div class="review-avatar">PS</div>
+            <div>
+              <div class="review-author">Priya Sharma</div>
+              <div class="review-stars">⭐⭐⭐⭐⭐</div>
+            </div>
+          </div>
+          <p class="review-text">"Excellent customer service! They patiently explained every policy and helped me choose the best plan for my family's future. Truly a wonderful experience."</p>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="review-card">
+          <div class="review-card-header">
+            <div class="review-avatar">AR</div>
+            <div>
+              <div class="review-author">Anil Reddy</div>
+              <div class="review-stars">⭐⭐⭐⭐⭐</div>
+            </div>
+          </div>
+          <p class="review-text">"Professional, knowledgeable, and trustworthy. My policy was issued quickly, and all my questions were answered clearly. Thank you for the outstanding support."</p>
+        </div>
+
+        <!-- Review 4 -->
+        <div class="review-card">
+          <div class="review-card-header">
+            <div class="review-avatar">SP</div>
+            <div>
+              <div class="review-author">Sneha Patel</div>
+              <div class="review-stars">⭐⭐⭐⭐⭐</div>
+            </div>
+          </div>
+          <p class="review-text">"I never thought buying insurance could be this simple. The team made everything easy to understand and completed the process without any hassle."</p>
+        </div>
+
+        <!-- Review 5 -->
+        <div class="review-card">
+          <div class="review-card-header">
+            <div class="review-avatar">VM</div>
+            <div>
+              <div class="review-author">Vivek Mehta</div>
+              <div class="review-stars">⭐⭐⭐⭐⭐</div>
+            </div>
+          </div>
+          <p class="review-text">"Their financial guidance was exceptional. I felt confident making my decision because they explained every option honestly and transparently."</p>
+        </div>
+
+        <!-- Review 6 -->
+        <div class="review-card">
+          <div class="review-card-header">
+            <div class="review-avatar">KN</div>
+            <div>
+              <div class="review-author">Kavya Nair</div>
+              <div class="review-stars">⭐⭐⭐⭐⭐</div>
+            </div>
+          </div>
+          <p class="review-text">"The team genuinely cares about their customers. From consultation to policy issuance, everything was handled professionally and efficiently."</p>
+        </div>
+
+        <!-- Review 7 -->
+        <div class="review-card">
+          <div class="review-card-header">
+            <div class="review-avatar">RV</div>
+            <div>
+              <div class="review-author">Rohit Verma</div>
+              <div class="review-stars">⭐⭐⭐⭐⭐</div>
+            </div>
+          </div>
+          <p class="review-text">"Fast response, excellent service, and complete transparency throughout the process. I would happily recommend them to my friends and family."</p>
+        </div>
+
+        <!-- Review 8 -->
+        <div class="review-card">
+          <div class="review-card-header">
+            <div class="review-avatar">PI</div>
+            <div>
+              <div class="review-author">Pooja Iyer</div>
+              <div class="review-stars">⭐⭐⭐⭐⭐</div>
+            </div>
+          </div>
+          <p class="review-text">"They helped me compare multiple plans and choose the one that perfectly matched my needs. The entire experience exceeded my expectations."</p>
+        </div>
+
+        <!-- Review 9 -->
+        <div class="review-card">
+          <div class="review-card-header">
+            <div class="review-avatar">SG</div>
+            <div>
+              <div class="review-author">Sandeep Gupta</div>
+              <div class="review-stars">⭐⭐⭐⭐⭐</div>
+            </div>
+          </div>
+          <p class="review-text">"Very reliable and customer-focused. I appreciate their honest advice and prompt assistance. It's reassuring to work with professionals who truly care."</p>
+        </div>
+
+        <!-- Review 10 -->
+        <div class="review-card">
+          <div class="review-card-header">
+            <div class="review-avatar">AJ</div>
+            <div>
+              <div class="review-author">Aditi Joshi</div>
+              <div class="review-stars">⭐⭐⭐⭐⭐</div>
+            </div>
+          </div>
+          <p class="review-text">"One of the best financial service experiences I've had. The process was quick, simple, and completely stress-free. Thank you for your excellent support."</p>
+        </div>
+      </div>
     </div>
   </section>
 
