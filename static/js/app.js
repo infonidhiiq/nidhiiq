@@ -2,9 +2,65 @@
 
 const App = {
   currentCategory: 'Other Plans',
+  currentHeroSlide: 0,
+  heroSlideTimer: null,
 
   init() {
     this.setupEventListeners();
+    this.initHeroSlider();
+  },
+
+  initHeroSlider() {
+    const track = document.getElementById('heroSliderTrack');
+    if (!track) return;
+
+    this.startHeroSlideAutoPlay();
+
+    const wrapper = document.querySelector('.hero-slider-wrapper');
+    if (wrapper) {
+      wrapper.addEventListener('mouseenter', () => this.stopHeroSlideAutoPlay());
+      wrapper.addEventListener('mouseleave', () => this.startHeroSlideAutoPlay());
+    }
+  },
+
+  goToHeroSlide(index, event = null) {
+    if (event) event.stopPropagation();
+    const track = document.getElementById('heroSliderTrack');
+    const dots = document.querySelectorAll('.hero-dot');
+    if (!track) return;
+
+    this.currentHeroSlide = (index + 3) % 3;
+    track.style.transform = `translateX(-${this.currentHeroSlide * 100}%)`;
+
+    dots.forEach((dot, idx) => {
+      if (idx === this.currentHeroSlide) {
+        dot.classList.add('active');
+      } else {
+        dot.classList.remove('active');
+      }
+    });
+  },
+
+  nextHeroSlide(event = null) {
+    this.goToHeroSlide(this.currentHeroSlide + 1, event);
+  },
+
+  prevHeroSlide(event = null) {
+    this.goToHeroSlide(this.currentHeroSlide - 1, event);
+  },
+
+  startHeroSlideAutoPlay() {
+    this.stopHeroSlideAutoPlay();
+    this.heroSlideTimer = setInterval(() => {
+      this.nextHeroSlide();
+    }, 3500);
+  },
+
+  stopHeroSlideAutoPlay() {
+    if (this.heroSlideTimer) {
+      clearInterval(this.heroSlideTimer);
+      this.heroSlideTimer = null;
+    }
   },
 
   setupEventListeners() {
