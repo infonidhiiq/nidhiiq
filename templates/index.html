@@ -10,45 +10,46 @@
   <link rel="stylesheet" href="/static/css/main.css">
   <link rel="shortcut icon" href="/static/images/nidhiiq_official_logo.png">
   <style>
-    /* Desktop Default Clean Flat Cards */
+    /* Desktop Default Clean Flat Cards (Rectangular Shape) */
     @media (min-width: 769px) {
       .pb-card-7col {
-        background: #f2f6fc !important;
-        border-radius: 18px !important;
-        padding: 18px 8px 12px !important;
+        background: #f8fafc !important;
+        border-radius: 14px !important;
+        padding: 12px 6px 10px !important;
         text-align: center !important;
         box-shadow: none !important;
         border: 1px solid #eef2f8 !important;
         cursor: pointer;
-        transition: background 0.2s, transform 0.2s;
+        transition: background 0.25s ease, transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
         position: relative;
-        min-height: 150px;
+        min-height: 108px !important;
       }
 
       .pb-card-7col:hover {
         background: #e8f0fe !important;
-        transform: translateY(-4px);
+        transform: translateY(-3px);
+        border-color: #cbd5e1 !important;
       }
 
       .pb-card-icon-img {
-        width: 62px;
-        height: 62px;
+        width: 48px !important;
+        height: 48px !important;
         object-fit: contain;
-        margin-top: 4px;
-        margin-bottom: 8px;
+        margin-top: 2px !important;
+        margin-bottom: 6px !important;
         filter: none !important;
         box-shadow: none !important;
       }
 
       .pb-card-7col-title {
-        font-size: 0.86rem !important;
+        font-size: 0.82rem !important;
         font-weight: 700 !important;
         color: #1e293b !important;
-        line-height: 1.25 !important;
+        line-height: 1.2 !important;
       }
     }
 
@@ -137,7 +138,8 @@
         <li><a href="#featured-solutions" class="nidhi-header-link">Investments</a></li>
         <li><a href="javascript:void(0)" onclick="App.openEnquireModal('Retirement Plans')"
             class="nidhi-header-link">Retirement</a></li>
-        <li><a href="javascript:void(0)" onclick="App.openEnquireModal('Family Office')" class="nidhi-header-link">Family
+        <li><a href="javascript:void(0)" onclick="App.openEnquireModal('Family Office')"
+            class="nidhi-header-link">Family
             Office</a></li>
         <li><a href="javascript:void(0)" onclick="App.openEnquireModal('Real Estate')" class="nidhi-header-link">Real
             Estate</a></li>
@@ -151,7 +153,8 @@
 
       <!-- 'In News ›' Green Pill Button linking to YouTube -->
       <div>
-        <a href="https://www.youtube.com/@NidhiIQOfficial" target="_blank" rel="noopener noreferrer" class="btn-in-news">
+        <a href="https://www.youtube.com/@NidhiIQOfficial" target="_blank" rel="noopener noreferrer"
+          class="btn-in-news">
           In News ›
         </a>
       </div>
@@ -663,13 +666,17 @@
     <!-- Regulatory Information Section -->
     <div class="nidhi-container"
       style="margin:20px auto 0; border-top:1px solid #e2e8f0; padding-top:16px; font-size:0.78rem; color:#64748b; line-height:1.65;">
-      <span style="color:#0f172a; font-weight:800; text-transform:uppercase; letter-spacing:0.4px;">Regulatory Information:</span> NidhiIQ is authorized to distribute financial products in accordance with applicable regulatory guidelines. &bull; IRDAI Life Insurance License No.: 135612 &bull; IRDAI General Insurance License No.: ILGD00062787 &bull; AMFI Registration Number (ARN): ARN-366076.<br>
-      &bull; Investment in Mutual Funds is subject to market risks. Please read all scheme-related documents carefully before investing. &bull; Insurance is the subject matter of solicitation.
+      <span style="color:#0f172a; font-weight:800; text-transform:uppercase; letter-spacing:0.4px;">Regulatory
+        Information:</span> NidhiIQ is authorized to distribute financial products in accordance with applicable
+      regulatory guidelines. &bull; IRDAI Life Insurance License No.: 135612 &bull; IRDAI General Insurance License No.:
+      ILGD00062787 &bull; AMFI Registration Number (ARN): ARN-366076.<br>
+      &bull; Investment in Mutual Funds is subject to market risks. Please read all scheme-related documents carefully
+      before investing. &bull; Insurance is the subject matter of solicitation.
     </div>
 
     <div
       style="text-align:center; font-size:0.82rem; color:#94a3b8; border-top:1px solid #e2e8f0; padding-top:20px; margin-top:20px;">
-      © 2026 NidhiIQ Financial Intelligence Platform. All Rights Reserved.
+      © 2026 NidhiIQ All Rights Reserved.
     </div>
   </footer>
 
