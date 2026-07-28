@@ -221,6 +221,17 @@ const App = {
 
   openWhatsAppChat() {
     window.open('https://wa.me/916361839979?text=Hello%20NidhiIQ%20Advisor%2C%20I%20would%20like%20to%20get%20assistance%20with%20insurance%2C%20real%20estate%2C%20loans%2C%20or%20family%20office%20services.', '_blank');
+  },
+
+  scrollReviews(direction) {
+    const track = document.getElementById('reviewsScrollTrack');
+    if (!track) return;
+    const scrollAmount = 340;
+    if (direction === 'left') {
+      track.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+    } else {
+      track.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+    }
   }
 };
 
