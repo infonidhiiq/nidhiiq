@@ -655,14 +655,26 @@ body {
   }
   .pb-navbar {
     padding: 8px 4% !important;
-    gap: 10px;
-    flex-wrap: wrap;
+  }
+  .pb-navbar-inner {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    gap: 8px 12px !important;
+  }
+  .pb-navbar-inner > a:first-child {
+    order: 1 !important;
+  }
+  .nidhi-news-wrap {
+    order: 2 !important;
+    margin-left: auto !important;
   }
   .nidhi-header-menu {
+    order: 3 !important;
+    width: 100% !important;
     overflow-x: auto;
     white-space: nowrap;
-    width: 100%;
-    order: 3;
     padding: 6px 2px;
     gap: 16px !important;
     -webkit-overflow-scrolling: touch;
@@ -674,6 +686,11 @@ body {
   }
   .nidhi-nav-divider {
     display: none;
+  }
+  .btn-in-news {
+    padding: 6px 14px !important;
+    font-size: 0.82rem !important;
+    white-space: nowrap !important;
   }
   .pb-hero-container {
     grid-template-columns: 1fr;
