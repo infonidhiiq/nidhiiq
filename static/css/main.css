@@ -587,7 +587,7 @@ body {
   background: #ffffff;
   border: 1px solid #e2e8f0;
   border-radius: 12px;
-  padding: 14px 14px 12px;
+  padding: 10px 12px 8px;
   box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);
   transition: transform 0.2s ease, border-color 0.2s ease;
 }
@@ -601,7 +601,7 @@ body {
   display: flex;
   align-items: center;
   gap: 10px;
-  margin-bottom: 8px;
+  margin-bottom: 4px;
 }
 
 .review-avatar-sm {
@@ -798,3 +798,48 @@ body {
     max-height: 90vh !important;
   }
 }
+
+/* Modern Enquiry Modal v2 Mobile Responsive Styles */
+@media (max-width: 900px) {
+  .modal-content-enquire-v2 {
+    width: 95% !important;
+    padding: 28px 20px !important;
+    border-radius: 20px !important;
+    max-height: 90vh !important;
+  }
+  .modal-grid-v2 {
+    grid-template-columns: 1fr !important;
+    gap: 24px !important;
+  }
+  .modal-features-grid-v2 {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 16px 12px !important;
+  }
+  .modal-steps-flex-v2 {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 16px !important;
+  }
+  .modal-steps-arrow-v2 {
+    display: none !important;
+  }
+  .modal-peach-box-v2 {
+    grid-template-columns: 1fr !important;
+    gap: 14px !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .modal-content-enquire-v2 {
+    padding: 22px 14px !important;
+    max-height: 94vh !important;
+  }
+  .modal-content-enquire-v2 h2 {
+    font-size: 1.45rem !important;
+  }
+  .modal-close-btn-v2 {
+    top: 10px !important;
+    right: 10px !important;
+  }
+}
+
