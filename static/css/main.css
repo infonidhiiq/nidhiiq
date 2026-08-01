@@ -334,6 +334,14 @@ body {
   gap: 12px;
 }
 
+/* Categorized Products 7-Column Grid */
+.cat-grid-7col {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 12px;
+}
+
+
 /* 3 In a Row Banners Grid */
 .banners-grid-3col {
   display: grid;
